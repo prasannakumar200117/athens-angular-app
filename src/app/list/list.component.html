@@ -1,0 +1,24 @@
+<div>
+
+    @if(carNames.length > 0) {
+        <ul>
+            <li *ngFor="let carName of carNames">{{carName}}</li>
+        </ul>
+    } @else {
+        <p>No cars available</p>
+    }
+   
+</div>
+
+<!-- list.component.html -->
+<!-- <div>
+    <ng-container *ngIf="carNames.length > 0; else noCars">
+      <ul>
+        <li *ngFor="let carName of carNames">{{ carName }}</li>
+      </ul>
+    </ng-container>
+    <ng-template #noCars>
+      <p>No cars available</p>
+    </ng-template>
+  </div>
+   -->
